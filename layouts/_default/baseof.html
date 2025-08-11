@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="description" content="" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+   <title>
+      {{ .Site.Title }} | {{ if .Page.Title }}{{ .Page.Title }}{{ end }}
+   </title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+
+   <link rel='stylesheet' id='x-stack-css' href='/assets/wp-content/themes/x/framework/dist/css/site/stacks/icon4615.css'
+   type='text/css' media='all' />
+
+   {{ if eq .File.Path "about-us.md" }}
+      <link rel="stylesheet" href="/assets/style-about.css">
+   {{ end }}
+
+   {{ if eq .File.Path "_index.md" }}
+      <link rel="stylesheet" href="/assets/style.css">
+   {{ end }}
+
+   <style>
+      .menu-item:hover > .sub-menu {
+         display: block;
+      }
+   </style>
+
+</head>
+
+<body
+	class="home page-template-default page page-id-173 x-stack-icon x-full-width-layout-active x-full-width-active x-post-meta-disabled x-page-title-disabled x-portfolio-meta-disabled x-navbar-fixed-top-active cornerstone-v6_1_4 x-v9_1_4">
+	<div id="x-root" class="x-root">
+		<div id="top" class="site">
+         {{ partial "header.html" . }}
+         {{ block "main" . }}
+         {{ end }}
+         {{ partial "footer.html" . }}
+		</div> 
+		<a class="x-scroll-top right fade" title="Back to Top" data-rvt-scroll-top>
+			<i class="x-icon-angle-up" data-x-icon-s="&#xf106;"></i>
+		</a>
+	</div> 
+
+   <script type='text/javascript' id='cornerstone-site-body-js-extra'>
+      /* <![CDATA[ */
+      var csJsData = {
+         "linkSelector": "a[href*=\"#\"]"
+      };
+      /* ]]> */
+   </script>
+
+   <script src="/assets/wp-includes/js/jquery/jquery.minaf6c.js"></script>
+   <script src="/assets/wp-content/plugins/cornerstone/assets/js/site/cs.6f62d0f.js"></script>
+</body>
+</html>
