@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://globalemgt.github.io/clc-website/'
 languageCode = 'en'
 title = 'Controlled Lighting Corp.'
 
@@ -16,4 +16,4 @@ title = 'Controlled Lighting Corp.'
 
 
 [Params]
-siteLogo = "/assets/wp-content/uploads/2019/12/BlueCirclelightCLC-2018-300x115.png"
+siteLogo = "assets/wp-content/uploads/2019/12/BlueCirclelightCLC-2018-300x115.png"
