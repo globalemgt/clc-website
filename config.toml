@@ -1,0 +1,19 @@
+baseURL = '/'
+languageCode = 'en'
+title = 'Controlled Lighting Corp.'
+
+[menu]
+[[menu.main_menu]]
+  identifier = 'company'
+  name = 'Company'
+  url = '#!'
+  weight = '1'
+  [[menu.main_menu]]
+    parent = 'company'
+    name = 'About Us'
+    url = '/about-us'
+    weight = '1'
+
+
+[Params]
+siteLogo = "/assets/wp-content/uploads/2019/12/BlueCirclelightCLC-2018-300x115.png"

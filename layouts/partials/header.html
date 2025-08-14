@@ -1,0 +1,88 @@
+<header class="masthead masthead-inline" role="banner">
+   <div class="x-navbar-wrap">
+      <div class="x-navbar">
+         <div class="x-navbar-inner">
+            <div class="x-container max width">
+               <a href="{{.Site.BaseURL}}" class="x-brand img">
+                  <img src="{{.Site.Params.SiteLogo}}" alt="{{.Site.Title}}"></a>
+               <a href="#" id="x-btn-navbar" class="x-btn-navbar collapsed" data-x-toggle="collapse-b"
+                  data-x-toggleable="x-nav-wrap-mobile" aria-expanded="false" aria-controls="x-nav-wrap-mobile"
+                  role="button">
+                  <i class="x-icon-bars" data-x-icon-s="&#xf0c9;"></i>
+                  <span class="visually-hidden">Navigation</span>
+               </a>
+
+               <nav class="x-nav-wrap desktop" role="navigation">
+                  <ul id="menu-integrity-business-navigation" class="x-nav">
+                     {{ range .Site.Menus.main_menu }}
+                     <li id="menu-item-383"
+                        class="{{ if eq .Identifier $.Page.Params.menu.main_menu.identifier }} active{{ end }} menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-383">
+                        <a href="{{ .URL }}"><span>{{ .Name }}</span></a>
+
+                        {{ if .HasChildren }}
+                        <ul class="sub-menu">
+                           {{ range .Children }}
+                           <li id="menu-item-404"
+                              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-404">
+                              <a href="{{ .URL }}"><span>{{ .Name }}</span></a>
+                           </li>
+                           {{ end }}
+                        </ul>
+                        {{ end }}
+                     </li>
+                     {{ end }}
+                  </ul>
+               </nav>
+
+
+               <div id="x-nav-wrap-mobile" class="x-nav-wrap mobile x-collapsed" data-x-toggleable="x-nav-wrap-mobile"
+                  data-x-toggle-collapse="1" aria-hidden="false" aria-labelledby="x-btn-navbar">
+                  <ul id="menu-integrity-business-navigation-1" class="x-nav">
+                     {{ range .Site.Menus.main_menu }}
+                        <li
+                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-383">
+                           <a href="{{ .URL }}"><span>{{ .Name }}</span>
+                              <div class="x-sub-toggle collapsed" data-x-toggle="collapse-b"
+                                 data-x-toggleable="x-nav-wrap-mobile-sm-0" aria-expanded="false" aria-haspopup="true"
+                                 aria-controls="x-nav-wrap-mobile-sm-0" data-x-skip-scroll="true"><span
+                                    data-x-skip-scroll="true"><i class="x-icon-angle-double-down" data-x-icon-s=""
+                                       data-x-skip-scroll="true"></i></span></div>
+                           </a>
+
+                           {{ if .HasChildren }}
+                              <ul class="x-collapsed" id="x-nav-wrap-mobile-sm-0" data-x-toggleable="x-nav-wrap-mobile-sm-0"
+                                 data-x-toggle-collapse="1" aria-hidden="true">
+                                 {{ range .Children }}
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-404"><a
+                                       href="{{ .URL }}"><span>{{ .Name }}</span></a>
+                                    </li>
+                                 {{ end }}
+                              </ul>
+                           {{ end }}
+                        </li>
+                     {{ end }}
+                     <!-- <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-402">
+                        <a href="https://controlledlighting.net/our-partners/"><span>Supply Partners</span>
+                           <div class="x-sub-toggle collapsed" data-x-toggle="collapse-b"
+                              data-x-toggleable="x-nav-wrap-mobile-sm-1" aria-expanded="false" aria-haspopup="true"
+                              aria-controls="x-nav-wrap-mobile-sm-1" data-x-skip-scroll="true"><span
+                                 data-x-skip-scroll="true"><i class="x-icon-angle-double-down" data-x-icon-s=""
+                                    data-x-skip-scroll="true"></i></span></div>
+                        </a>
+                        <ul class="x-collapsed" id="x-nav-wrap-mobile-sm-1" data-x-toggleable="x-nav-wrap-mobile-sm-1"
+                           data-x-toggle-collapse="1" aria-hidden="true">
+                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7152"><a
+                                 href="https://controlledlighting.net/maxlite/"><span>MaxLite</span></a></li>
+                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7197"><a
+                                 href="https://controlledlighting.net/maxlite/c-max-rf-lighting-controls/"><span>MaxLite
+                                    C-Max RF Lighting Controls</span></a></li>
+                        </ul>
+                     </li> -->
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
