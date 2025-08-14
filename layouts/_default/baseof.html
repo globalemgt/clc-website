@@ -13,15 +13,15 @@
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
 
-   <link rel='stylesheet' id='x-stack-css' href='/assets/wp-content/themes/x/framework/dist/css/site/stacks/icon4615.css'
+   <link rel='stylesheet' id='x-stack-css' href={{"assets/wp-content/themes/x/framework/dist/css/site/stacks/icon4615.css" | absURL }}
    type='text/css' media='all' />
 
    {{ if eq .File.Path "about-us.md" }}
-      <link rel="stylesheet" href="/assets/style-about.css">
+      <link rel="stylesheet" href={{"assets/style-about.css" | absURL }}>
    {{ end }}
 
    {{ if eq .File.Path "_index.md" }}
-      <link rel="stylesheet" href="/assets/style.css">
+      <link rel="stylesheet" href={{"assets/style.css" | absURL }}>
    {{ end }}
 
    <style>
@@ -54,7 +54,7 @@
       /* ]]> */
    </script>
 
-   <script src="/assets/wp-includes/js/jquery/jquery.minaf6c.js"></script>
-   <script src="/assets/wp-content/plugins/cornerstone/assets/js/site/cs.6f62d0f.js"></script>
+   <script src={{"assets/wp-includes/js/jquery/jquery.minaf6c.js" | absURL }}></script>
+   <script src={{"assets/wp-content/plugins/cornerstone/assets/js/site/cs.6f62d0f.js" | absURL }}></script>
 </body>
 </html>

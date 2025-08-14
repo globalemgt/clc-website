@@ -4,7 +4,7 @@
          <div class="x-navbar-inner">
             <div class="x-container max width">
                <a href="{{.Site.BaseURL}}" class="x-brand img">
-                  <img src="{{.Site.Params.SiteLogo}}" alt="{{.Site.Title}}"></a>
+                  <img src="{{ .Site.Params.SiteLogo | absURL }}" alt="{{.Site.Title}}"></a>
                <a href="#" id="x-btn-navbar" class="x-btn-navbar collapsed" data-x-toggle="collapse-b"
                   data-x-toggleable="x-nav-wrap-mobile" aria-expanded="false" aria-controls="x-nav-wrap-mobile"
                   role="button">
