@@ -16,10 +16,26 @@ title = 'Controlled Lighting Corp.'
   weight = 1
 
 [[menu.main_menu]]
+  parent = "company"
+  identifier = "baa-taa-compliance"
+  name = "BAA & TAA Compliance"
+  url = "/baa-taa-compliance"
+  weight = 2
+
+[[menu.main_menu]]
+  parent = "company"
+  identifier = "leadership"
+  name = "Leadership"
+  url = "/leadership"
+  weight = 3
+
+[[menu.main_menu]]
   identifier = "contact-us"
   name = "Contact"
   url = "/contact-us"
   weight = 2
+
+
 
 [Params]
 siteLogo = "assets/wp-content/uploads/2019/12/BlueCirclelightCLC-2018-300x115.png"
