@@ -6,7 +6,7 @@ title = 'Controlled Lighting Corp.'
 [[menu.main_menu]]
   identifier = "company"
   name = "Company"
-  url = "#!"
+  url = "/about-us"
   weight = 1
 
 [[menu.main_menu]]
@@ -37,16 +37,29 @@ title = 'Controlled Lighting Corp.'
   weight = 4
 
 [[menu.main_menu]]
+  identifier = "supply-partners"
+  name = "Supply Partners"
+  url = "/our-partners"
+  weight = 2
+
+[[menu.main_menu]]
+  parent = "supply-partners"
+  identifier = "maxlite"
+  name = "Maxlite"
+  url = "/maxlite"
+  weight = 1
+
+[[menu.main_menu]]
   identifier = "resources"
   name = "Resources"
   url = "/resources"
-  weight = 2
+  weight = 3
 
 [[menu.main_menu]]
   identifier = "contact-us"
   name = "Contact"
   url = "/contact-us"
-  weight = 3
+  weight = 4
 
 
 
