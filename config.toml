@@ -24,10 +24,17 @@ title = 'Controlled Lighting Corp.'
 
 [[menu.main_menu]]
   parent = "company"
+  identifier = "our-partners"
+  name = "Our Partners"
+  url = "/our-partners"
+  weight = 3
+
+[[menu.main_menu]]
+  parent = "company"
   identifier = "leadership"
   name = "Leadership"
   url = "/leadership"
-  weight = 3
+  weight = 4
 
 [[menu.main_menu]]
   identifier = "resources"
