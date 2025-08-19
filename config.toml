@@ -30,10 +30,16 @@ title = 'Controlled Lighting Corp.'
   weight = 3
 
 [[menu.main_menu]]
+  identifier = "resources"
+  name = "Resources"
+  url = "/resources"
+  weight = 2
+
+[[menu.main_menu]]
   identifier = "contact-us"
   name = "Contact"
   url = "/contact-us"
-  weight = 2
+  weight = 3
 
 
 
