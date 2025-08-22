@@ -78,6 +78,13 @@ title = 'Controlled Lighting Corp.'
   weight = 5
 
 [[menu.main_menu]]
+  parent = "supply-partners"
+  identifier = "orion-energy-systems"
+  name = "Orion Energy Systems"
+  url = "/orion-energy-systems"
+  weight = 6
+
+[[menu.main_menu]]
   identifier = "resources"
   name = "Resources"
   url = "/resources"
