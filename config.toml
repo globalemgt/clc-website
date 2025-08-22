@@ -50,6 +50,34 @@ title = 'Controlled Lighting Corp.'
   weight = 1
 
 [[menu.main_menu]]
+  parent = "supply-partners"
+  identifier = "maxlite-c-max"
+  name = "MaxLite C-Max RF Lighting Controls"
+  url = "/maxlite/c-max-rf-lighting-controls"
+  weight = 2
+
+[[menu.main_menu]]
+  parent = "supply-partners"
+  identifier = "maxlite-mseries"
+  name = "MaxLite M Series"
+  url = "/maxlite/mseries"
+  weight = 3
+
+[[menu.main_menu]]
+  parent = "supply-partners"
+  identifier = "maxlite-rcf-series"
+  name = "MaxLite RCF Series"
+  url = "/maxlite/rcf-series"
+  weight = 4
+
+[[menu.main_menu]]
+  parent = "supply-partners"
+  identifier = "maxlite-evmax"
+  name = "EVMax+"
+  url = "/maxlite/evmax"
+  weight = 5
+
+[[menu.main_menu]]
   identifier = "resources"
   name = "Resources"
   url = "/resources"
