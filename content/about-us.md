@@ -1,8 +1,7 @@
 ---
-menu:
-  main_menu:
-    identifier: 'company'
+# menu:
+#   main_menu:
+#    identifier: 'company'
 layout: about
 title: About Us
 ---
-

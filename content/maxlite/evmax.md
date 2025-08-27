@@ -1,8 +1,7 @@
 ---
-menu:
-  main_menu:
-    identifier: 'maxlite-evmax'
-layout: maxlite/evmax
+# menu:
+#   main_menu:
+#     # identifier: "maxlite-evmax"
+layout: evmax
 title: EVMax+
 ---
-

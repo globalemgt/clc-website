@@ -2,6 +2,9 @@ baseURL = 'https://globalemgt.github.io/clc-website/'
 languageCode = 'en'
 title = 'Controlled Lighting Corp.'
 
+disableKinds = ["section", "taxonomy"]
+
+
 [menu]
 [[menu.main_menu]]
   identifier = "company"
